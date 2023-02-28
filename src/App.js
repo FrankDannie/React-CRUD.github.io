@@ -76,7 +76,7 @@ function App() {
   
   
   const deleteEmployee = (EMPLOYEE_ID) => {
-    if (window.confirm("Do you really want to delete!\n Choose either OK or Cancel.")) {
+    if (window.confirm("Do you really want to delete!\n Choose either OK or Cancel")) {
     
     Axios.delete(`https://demo7580995.mockable.io/delete`).then((response) => {
       setEmployeeList(
